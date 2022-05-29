@@ -1,0 +1,37 @@
+<section class="karl-testimonials-area section_padding_100">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section_heading text-center">
+                    <h2>Testimonials</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <div class="karl-testimonials-slides owl-carousel">
+
+                    <!-- Single Testimonial Area -->
+                    
+                    {% for testimonial in testimonials %}
+                        <div class="single-testimonial-area text-center">
+                            <span class="quote">"</span>
+                            <h6>{{testimonial.text}}</h6>
+                            <div class="testimonial-info d-flex align-items-center justify-content-center">
+                                <div class="tes-thumbnail">
+                                    <img src="{{testimonial.img.url}}" alt="">
+                                </div>
+                                <div class="testi-data">
+                                    <p>{{testimonial.author}}</p>
+                                    <span>{{testimonial.livein}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
