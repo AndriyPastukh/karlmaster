@@ -14,7 +14,7 @@ from pathlib import Path
 import os, sys
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-APPS_DIR = os.path.join(BASE_DIR, "C:\Users\Андрій\Desktop\24 days challenge DJNAGO\project draft\git\karlmaster\karlmaster\apps") 
+APPS_DIR = os.path.join(BASE_DIR, os.path.dirname(os.path.realpath(__file__)) + "/apps") 
 sys.path.insert(0, APPS_DIR)
 
 # Quick-start development settings - unsuitable for production
